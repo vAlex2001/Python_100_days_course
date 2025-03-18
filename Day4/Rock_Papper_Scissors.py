@@ -34,7 +34,7 @@ options = [Rock, Paper, Scissors]
 
 human_choice = int(input("Choose your option 0 - > Rock, 1 -> Paper, 2 -> Scissors : "))
 
-if human_choice > 2 and human_choice < 0:
+if human_choice > 2 or human_choice < 0:
     print("Wrong value.")
 else:
     computer_choice = random.randint(0,2)
