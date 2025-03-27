@@ -7,6 +7,7 @@ import Scoreboard
 # Create the screen
 screen = turtle.Screen()
 screen.tracer(0)
+
 # Custom size
 screen.setup(width = 600, height = 600)
 
