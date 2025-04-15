@@ -9,7 +9,7 @@ connection.starttls()  # Secure the connection
 connection.login(user=my_email, password=password)
 connection.sendmail(
     from_addr=my_email,
-    to_addrs="target_mail ",
+    to_addrs="target_mail",
     msg="Subject:Hello\n\nThis is the body of the email."
 )
 connection.close()

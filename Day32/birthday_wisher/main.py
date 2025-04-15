@@ -27,9 +27,8 @@ if today in birtdays_dict:
         connection.starttls()
         connection.login(MY_EMAIL, MY_PASSWORD)
         connection.sendmail(
-            from_addr=MY_EMAIL
-            to_addrs=TARGET_EMAIL
+            from_addr=MY_EMAIL,
+            to_addrs=TARGET_EMAIL,
             msg = f"Subject:Happy Birthday!\n\n{content}"
         )
-
-
+        
